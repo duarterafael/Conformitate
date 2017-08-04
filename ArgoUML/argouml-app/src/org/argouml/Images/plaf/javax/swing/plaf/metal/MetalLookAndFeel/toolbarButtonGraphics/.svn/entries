@@ -1,0 +1,37 @@
+9
+
+dir
+19923
+http://argouml.tigris.org/svn/argouml/trunk/src/argouml-app/src/org/argouml/Images/plaf/javax/swing/plaf/metal/MetalLookAndFeel/toolbarButtonGraphics
+http://argouml.tigris.org/svn/argouml
+
+
+
+2012-05-08T20:06:05.835505Z
+19882
+closettop_nightlybuild
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a161b567-7d1e-0410-9ef9-912c70fedb3f
+
+argouml
+dir
+
+general
+dir
+
+navigation
+dir
+

@@ -1,0 +1,11 @@
+1422797152861	Rename field 'configurationRandom'
+1422797188315	Rename field 'configurationManual'
+1422797198134	Rename method 'jToggleButton1ActionPerformed'
+1422800037048	Rename method 'configurationRandomBtnActionPerformed'
+1422800043837	Rename method 'gearAutoActionPerformed'
+1422814834084	Copy compilation unit
+1422822640411	Rename compilation unit 'ConfiguiManualPanel.java'
+1422825844074	Delete element
+1423188895663	Infer generic type arguments
+1423193100147	Rename method 'jToggleButton1ActionPerformed'
+1423340983883	Rename local variable 'i'

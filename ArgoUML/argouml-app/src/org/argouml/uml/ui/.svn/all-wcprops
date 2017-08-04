@@ -1,0 +1,635 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui
+END
+TabSrc.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabSrc.java
+END
+ActionActivityDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/18515/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionActivityDiagram.java
+END
+ActionNavigateContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateContext.java
+END
+UMLExpressionExpressionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLExpressionExpressionModel.java
+END
+UMLTextArea2.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTextArea2.java
+END
+UMLStereotypeList.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/19042/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLStereotypeList.java
+END
+ActionCollaborationDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionCollaborationDiagram.java
+END
+ActionDeleteModelElements.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionDeleteModelElements.java
+END
+UMLPlainTextDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLPlainTextDocument.java
+END
+ActionPaste.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionPaste.java
+END
+SourcePathController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/SourcePathController.java
+END
+TabStyle.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabStyle.java
+END
+SourcePathTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/SourcePathTableModel.java
+END
+UMLCheckBox2.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLCheckBox2.java
+END
+AbstractActionNewModelElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/AbstractActionNewModelElement.java
+END
+ActionSaveAllGraphics.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSaveAllGraphics.java
+END
+UMLTextField2.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTextField2.java
+END
+UMLExpressionLanguageField.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLExpressionLanguageField.java
+END
+ActionNavigateNamespace.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/argouml/!svn/ver/17996/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateNamespace.java
+END
+ActionImportFromSources.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionImportFromSources.java
+END
+ActionBooleanTaggedValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionBooleanTaggedValue.java
+END
+ActionUseCaseDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionUseCaseDiagram.java
+END
+ActionGenerationSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionGenerationSettings.java
+END
+UMLRecurrenceExpressionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLRecurrenceExpressionModel.java
+END
+ActionAddTopLevelPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionAddTopLevelPackage.java
+END
+ActionSetSourcePath.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSetSourcePath.java
+END
+UMLStimulusActionTextField.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLStimulusActionTextField.java
+END
+TabStereotype.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/argouml/!svn/ver/19037/trunk/src/argouml-app/src/org/argouml/uml/ui/TabStereotype.java
+END
+SaveGraphicsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/SaveGraphicsManager.java
+END
+TabDocumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/19893/trunk/src/argouml-app/src/org/argouml/uml/ui/TabDocumentation.java
+END
+UMLStereotypeListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLStereotypeListModel.java
+END
+LabelledLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/LabelledLayout.java
+END
+PropPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/PropPanel.java
+END
+AbstractActionRemoveElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/AbstractActionRemoveElement.java
+END
+ActionLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionLayout.java
+END
+ActionNavigateTransition.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateTransition.java
+END
+ActionSequenceDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSequenceDiagram.java
+END
+TabProps.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabProps.java
+END
+ActionGenerateOne.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionGenerateOne.java
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/argouml/!svn/ver/19882/trunk/src/argouml-app/src/org/argouml/uml/ui/.gitignore
+END
+ActionOpenProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionOpenProject.java
+END
+UMLModelElementTaggedValueDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLModelElementTaggedValueDocument.java
+END
+ActionDeploymentDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionDeploymentDiagram.java
+END
+InitUmlUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/argouml/!svn/ver/19024/trunk/src/argouml-app/src/org/argouml/uml/ui/InitUmlUI.java
+END
+UMLEditableComboBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19630/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLEditableComboBox.java
+END
+UMLExpressionModel2.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLExpressionModel2.java
+END
+ActionNavigateOppositeAssocEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateOppositeAssocEnd.java
+END
+UMLScriptExpressionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLScriptExpressionModel.java
+END
+ActionClassDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionClassDiagram.java
+END
+UMLTimeExpressionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTimeExpressionModel.java
+END
+UMLModelElementTaggedValueProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLModelElementTaggedValueProxy.java
+END
+UMLLinkedListCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLLinkedListCellRenderer.java
+END
+UMLDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLDocument.java
+END
+ActionRemoveModelElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionRemoveModelElement.java
+END
+ActionCut.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionCut.java
+END
+UMLDerivedCheckBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLDerivedCheckBox.java
+END
+ActionNavigateOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateOwner.java
+END
+ActionCopy.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionCopy.java
+END
+UMLDeprecatedCheckBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLDeprecatedCheckBox.java
+END
+AbstractActionNavigate.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/AbstractActionNavigate.java
+END
+ActionNavigateContainerElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateContainerElement.java
+END
+UMLComboBox2.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/19630/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLComboBox2.java
+END
+UMLTableCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTableCellRenderer.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/argouml/!svn/ver/14404/trunk/src/argouml-app/src/org/argouml/uml/ui/package.html
+END
+SourcePathControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/SourcePathControllerImpl.java
+END
+ActionAddPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionAddPackage.java
+END
+UMLComboBoxModel2.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLComboBoxModel2.java
+END
+ActionSaveProjectAs.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSaveProjectAs.java
+END
+ActionStateDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionStateDiagram.java
+END
+UMLTreeCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTreeCellRenderer.java
+END
+ActionGenerateAll.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionGenerateAll.java
+END
+UMLSearchableComboBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/19630/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLSearchableComboBox.java
+END
+UMLModelElementStereotypeListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/argouml/!svn/ver/19029/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLModelElementStereotypeListModel.java
+END
+UMLModelElementListModel2.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLModelElementListModel2.java
+END
+UMLExpressionBodyField.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLExpressionBodyField.java
+END
+UMLRadioButtonPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLRadioButtonPanel.java
+END
+UMLLinkMouseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLLinkMouseListener.java
+END
+UMLConditionExpressionModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLConditionExpressionModel.java
+END
+PropPanelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/PropPanelFactory.java
+END
+ActionNewDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNewDiagram.java
+END
+SourcePathDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/19870/trunk/src/argouml-app/src/org/argouml/uml/ui/SourcePathDialog.java
+END
+ActionAddDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionAddDiagram.java
+END
+UMLUserInterfaceContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLUserInterfaceContainer.java
+END
+UMLComboBoxNavigator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/18735/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLComboBoxNavigator.java
+END
+UMLStimulusActionTextProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLStimulusActionTextProperty.java
+END
+TabTaggedValuesModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabTaggedValuesModel.java
+END
+ActionSaveProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSaveProject.java
+END
+ActionReopenProject.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionReopenProject.java
+END
+PropPanelFactoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/PropPanelFactoryManager.java
+END
+TabTaggedValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabTaggedValues.java
+END
+UMLUserInterfaceComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLUserInterfaceComponent.java
+END
+TabConstraints.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/TabConstraints.java
+END
+ActionSaveGraphics.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionSaveGraphics.java
+END
+UMLChangeDispatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLChangeDispatch.java
+END
+ActionNavigateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateAction.java
+END
+ActionGenerateProjectCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionGenerateProjectCode.java
+END
+UMLListCellRenderer2.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19463/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLListCellRenderer2.java
+END
+ActionNavigateUpPreviousDown.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateUpPreviousDown.java
+END
+ActionNavigateAssociation.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateAssociation.java
+END
+ActionNavigateUpNextDown.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionNavigateUpNextDown.java
+END
+AbstractActionAddModelElement2.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/uml/ui/AbstractActionAddModelElement2.java
+END
+UMLAddDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLAddDialog.java
+END
+UMLTaggedValueCheckBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLTaggedValueCheckBox.java
+END
+UMLModelElementCommentDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/UMLModelElementCommentDocument.java
+END
+ActionRevertToSaved.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/17881/trunk/src/argouml-app/src/org/argouml/uml/ui/ActionRevertToSaved.java
+END

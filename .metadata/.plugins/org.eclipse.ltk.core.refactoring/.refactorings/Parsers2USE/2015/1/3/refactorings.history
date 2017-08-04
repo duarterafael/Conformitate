@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;dtInput&apos; in &apos;poli.mestrado.parser.bpmn2use.tag.task.AbstractTaskElement.toString()&apos; to &apos;dtOut&apos;&#x0D;&#x0A;- Original project: &apos;Parsers2USE&apos;&#x0D;&#x0A;- Original element: &apos;poli.mestrado.parser.bpmn2use.tag.task.AbstractTaskElement.toString().dtInput&apos;&#x0D;&#x0A;- Renamed element: &apos;dtInput&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;dtInput&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;poli.mestrado.parser.bpmn2use.tag.task{AbstractTaskElement.java[AbstractTaskElement~toString@dtInput!3485!3516!3496!3502!QDataObject;!0!false" name="dtOut" references="true" stamp="1421193352562" version="1.0"/>
+</session>

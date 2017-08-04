@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;MainProject&apos;&#x0D;&#x0A;- Original project: &apos;MainProject&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     bpmnmodel.bpmn&#x0D;&#x0A;     exportUse.xmi&#x0D;&#x0A;     exportUse.xmi~&#x0D;&#x0A;     model.serializabe&#x0D;&#x0A;     useFile.use" description="Delete elements" element1="exportUse/exportUse.xmi~" element2="exportUse/useFile.use" element3="exportUse/exportUse.xmi" element4="exportUse/model.serializabe" element5="exportUse/bpmnmodel.bpmn" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1420123646775" subPackages="false" version="1.0"/>
+</session>

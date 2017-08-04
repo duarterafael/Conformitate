@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 17 resources" deleteContents="false" description="Delete 17 resources" element1="/argouml-app" element10="/argouml-core-infra" element11="/argouml-core-model" element12="/argouml-core-model-euml" element13="/argouml-core-model-mdr" element14="/argouml-core-notation" element15="/argouml-core-tools" element16="/argouml-core-transformer" element17="/argouml-core-umlpropertypanels" element2="/argouml-build" element3="/argouml-core-diagrams-activity2" element4="/argouml-core-diagrams-class2" element5="/argouml-core-diagrams-deployment2" element6="/argouml-core-diagrams-sequence2" element7="/argouml-core-diagrams-state2" element8="/argouml-core-diagrams-structure2" element9="/argouml-core-diagrams-uml2" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="17" stamp="1413378005373"/>
+</session>

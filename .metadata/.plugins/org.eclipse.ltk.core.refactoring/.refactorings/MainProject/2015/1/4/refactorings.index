@@ -1,0 +1,25 @@
+1422061465377	Rename field 'conceptModelerToolBtn2'
+1422061638645	Delete element
+1422062286350	Rename field 'useTool2'
+1422062291116	Rename field 'bussinessProcessModelerToolBtn'
+1422062295710	Rename field 'bussinessProcessModelerToolBtn2'
+1422062494867	Rename field 'conceptModelerToolBtn'
+1422062500913	Rename field 'useTool'
+1422062506194	Rename field 'conceptModelerToolBtn2'
+1422064925175	Rename package 'processManager'
+1422064939578	Copy compilation unit
+1422065043488	Delete element
+1422065264415	Rename type 'NotpadManager'
+1422065578076	Rename field 'useScriptBtn'
+1422065589179	Rename method 'useScriptBtnActionPerformed'
+1422065593645	Rename field 'useScriptBtn1'
+1422065605101	Rename method 'useScriptBtn1ActionPerformed'
+1422067023097	Copy file
+1422067055950	Copy file
+1422067057348	Copy file
+1422105107725	Move compilation unit
+1422105159234	Delete elements
+1422105161826	Delete element
+1422106375367	Delete elements
+1422109666251	Rename local variable 'useFile'
+1422110172783	Rename method 'openModelOnlyOneFile'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="http://disseracaoaplication.googlecode.com/svn/trunk/"/>
+			<item value="https://disseracaoaplication.googlecode.com/svn/trunk/ disseracaoaplication"/>
+			<item value="https://disseracaoaplication.googlecode.com/svn/trunk/ disseracaoaplication --username rafaelbatistaduarte@gmail.com"/>
+		</list>
+	</section>
+</section>

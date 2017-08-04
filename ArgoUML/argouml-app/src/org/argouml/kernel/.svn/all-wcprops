@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/argouml/!svn/ver/19919/trunk/src/argouml-app/src/org/argouml/kernel
+END
+ProjectListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/src/org/argouml/kernel/ProjectListener.java
+END
+ProfileConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/kernel/ProfileConfiguration.java
+END
+UmlModelMutator.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/argouml/!svn/ver/19614/trunk/src/argouml-app/src/org/argouml/kernel/UmlModelMutator.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/Command.java
+END
+UndoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/UndoManager.java
+END
+AbstractCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/AbstractCommand.java
+END
+DefaultUndoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/kernel/DefaultUndoManager.java
+END
+Owned.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/argouml/!svn/ver/19906/trunk/src/argouml-app/src/org/argouml/kernel/Owned.java
+END
+ProjectEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/src/org/argouml/kernel/ProjectEvent.java
+END
+NonUndoableCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/NonUndoableCommand.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/argouml/!svn/ver/17200/trunk/src/argouml-app/src/org/argouml/kernel/package.html
+END
+ProjectSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/argouml/!svn/ver/18876/trunk/src/argouml-app/src/org/argouml/kernel/ProjectSettings.java
+END
+DelayedChangeNotify.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/DelayedChangeNotify.java
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/argouml/!svn/ver/19882/trunk/src/argouml-app/src/org/argouml/kernel/.gitignore
+END
+Project.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/src/org/argouml/kernel/Project.java
+END
+ProjectImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/argouml/!svn/ver/19919/trunk/src/argouml-app/src/org/argouml/kernel/ProjectImpl.java
+END
+MemberList.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/kernel/MemberList.java
+END
+DelayedVChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/DelayedVChangeListener.java
+END
+ProjectManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/argouml/!svn/ver/19907/trunk/src/argouml-app/src/org/argouml/kernel/ProjectManager.java
+END
+ActionList.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/argouml/!svn/ver/19906/trunk/src/argouml-app/src/org/argouml/kernel/ActionList.java
+END
+ProjectMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/ProjectMember.java
+END
+AbstractProjectMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/AbstractProjectMember.java
+END
+ProjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/argouml/!svn/ver/17822/trunk/src/argouml-app/src/org/argouml/kernel/ProjectFactory.java
+END

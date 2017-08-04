@@ -1,0 +1,336 @@
+package gui;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import poli.mestrado.parser.uml2use.GenereteSerializable;
+import poli.mestrado.parser.uml2use.UmlFileManager;
+import poli.mestrado.parser.uml2use.tag.AttributeTag;
+import poli.mestrado.parser.uml2use.tag.ClassTag;
+import poli.mestrado.parser.uml2use.tag.EnumerationLiteralTag;
+import poli.mestrado.parser.uml2use.tag.EnumerationTag;
+import poli.mestrado.parser.uml2use.tag.ModelTag;
+import poli.mestrado.parser.util.Constants;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Rafael
+ */
+public class ConfiguraManulaScreen extends javax.swing.JDialog {
+
+	// Variables declaration - do not modify                     
+	private javax.swing.JScrollPane jScrollPane2;
+	private javax.swing.JToggleButton saveBtn;
+	private javax.swing.JTable table;
+	private javax.swing.JToggleButton openBtn;
+	
+	// End of variables declaration      
+	private ModelTag model;
+	private int qtyLine = 0;
+	private Object [][]  rowData;
+	private String path =  UmlFileManager.getInstance().getExportXmiFile().getAbsolutePath().substring(0, UmlFileManager.getInstance().getExportXmiFile().getAbsolutePath().lastIndexOf(File.separator)+1)+Constants.CLASS_DIAGRAM_SERIALIZABEL_FILE_NAME;
+	/**
+	 * Creates new form ConfiguraManulaScreen
+	 */
+	public ConfiguraManulaScreen(java.awt.Frame parent, boolean modal) {
+		super(parent, modal);
+		getModel();
+		initComponents();
+	}
+	
+	public void getModel(){
+		try{
+			
+			model = (ModelTag) GenereteSerializable.retryveModel(path);
+			for (ClassTag classTag : model.getClassList()) {
+				qtyLine += classTag.getAttributesList().size();
+			}
+		} catch (ClassNotFoundException | IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	// <editor-fold defaultstate="collapsed" desc="Generated Code">         
+	
+	private Object [][]  getRowData(){
+			
+			rowData = new Object [qtyLine][4];
+			
+			int contLine = 0;
+			for (ClassTag classTag : model.getClassList()) {
+				for (AttributeTag attribute : classTag.getAttributesList()) {
+					Object [] line = new Object [4];
+					line[0] =  classTag.getName();
+					line[1] = attribute.getName();
+					line[2] = attribute.getType().getName();
+					if(attribute.getValuesInterval()!=null){
+						line[3] = attribute.getValuesInterval();
+					}else if(attribute.getType() instanceof EnumerationTag){
+						String str = "";
+						List<EnumerationLiteralTag> EnumerationLiteralLst = ((EnumerationTag)attribute.getType()).getEnumerationLiteralList();
+						for (EnumerationLiteralTag enumerationLiteralTag : EnumerationLiteralLst) {
+							str += "#"+enumerationLiteralTag.getName()+",";
+						}
+						line[3] = str.substring(0, str.length()-1);
+					}else{
+						line[3] = "";
+					}
+					rowData[contLine] = line;
+					contLine++;
+				}
+			}
+			
+			
+			return rowData;
+		
+	}
+	
+	private void initComponents() {
+		Object columnNames[] = { "Classe", "Atributo", "Tipo", "Valores"};
+
+		table = new JTable();
+		table.setModel(new javax.swing.table.DefaultTableModel(getRowData(),columnNames	) {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+			@SuppressWarnings("rawtypes")
+			Class[] types = new Class [] {
+				java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+			};
+			boolean[] canEdit = new boolean [] {
+					false, false, false, true
+			};
+
+			@SuppressWarnings("rawtypes")
+			public Class getColumnClass(int columnIndex) {
+				return types [columnIndex];
+			}
+
+			public boolean isCellEditable(int rowIndex, int columnIndex) {
+				return canEdit [columnIndex];
+			}
+		});
+		
+		jScrollPane2 = new javax.swing.JScrollPane();
+		saveBtn = new javax.swing.JToggleButton();
+		saveBtn.setIcon(new javax.swing.ImageIcon("./imgs/saveIcon.png")); // NOI18N
+
+		setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+		jScrollPane2.setViewportView(table);
+
+		saveBtn.setText("Salvar");
+		saveBtn.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				salvarActionPerformed(evt);
+			}
+		});
+		
+		 openBtn = new javax.swing.JToggleButton();
+		 openBtn.setIcon(new javax.swing.ImageIcon("./imgs/openIcon.png")); // NOI18N
+		 openBtn.addActionListener(new java.awt.event.ActionListener() {
+			 public void actionPerformed(java.awt.event.ActionEvent evt) {
+				 openBtnActionPerformed(evt);
+			 }
+		 });
+
+
+		 
+		 javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+	        getContentPane().setLayout(layout);
+	        layout.setHorizontalGroup(
+	            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+	            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 385, Short.MAX_VALUE)
+	            .addGroup(layout.createSequentialGroup()
+	                .addGap(0, 0, Short.MAX_VALUE)
+	                .addComponent(openBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+	                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+	                .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+	        );
+	        layout.setVerticalGroup(
+	            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+	            .addGroup(layout.createSequentialGroup()
+	                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 473, Short.MAX_VALUE)
+	                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+	                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+	                    .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+	                    .addComponent(openBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+	        );
+
+		pack();
+	}// </editor-fold>          
+	
+	private void openBtnActionPerformed(java.awt.event.ActionEvent evt) {   
+		JFileChooser chooser = new JFileChooser();
+	    FileNameExtensionFilter filter = new FileNameExtensionFilter("Texto","txt");
+	    chooser.setFileFilter(filter);
+	    int returnVal = chooser.showOpenDialog(this);
+	    if(returnVal == JFileChooser.APPROVE_OPTION) {
+	       
+	       String sCurrentLine;
+	       
+
+			try {
+				BufferedReader br = new BufferedReader(new FileReader(chooser.getSelectedFile()));
+
+				while ((sCurrentLine = br.readLine()) != null) {
+					String[] componenteLine = sCurrentLine.split(";");
+					for (int rowIndex = 0; rowIndex < table.getRowCount(); rowIndex++) {
+		    			   String className = (String)table.getModel().getValueAt(rowIndex, 0);
+		    			   String attributeName = (String)table.getModel().getValueAt(rowIndex, 1);
+		    			   String typeName = (String)table.getModel().getValueAt(rowIndex, 2);
+		    			   if(componenteLine[0].equalsIgnoreCase(className) && componenteLine[1].equalsIgnoreCase(attributeName) && componenteLine[2].equalsIgnoreCase(typeName)){
+		    				   table.getModel().setValueAt(componenteLine[3], rowIndex, 3);
+		    				   break;
+		    			   }
+		    		   }
+				}
+				
+				
+				
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+	       
+	    }
+	    
+	  
+	    
+    }  
+
+	private void salvarActionPerformed(java.awt.event.ActionEvent evt) {  
+		String erroString = checkDataFormat();
+		if(!erroString.equals("")){
+			 JOptionPane.showMessageDialog(ConfiguraManulaScreen.this, erroString, "", JOptionPane.ERROR_MESSAGE);
+		}else{
+			try {
+				JFileChooser chooser = new JFileChooser();
+				chooser.setDialogType(JFileChooser.SAVE_DIALOG);
+				FileNameExtensionFilter filter = new FileNameExtensionFilter("Texto","txt");
+				chooser.setFileFilter(filter);
+				int returnVal = chooser.showOpenDialog(this);
+				if(returnVal == JFileChooser.APPROVE_OPTION) {
+
+					File file = new File(chooser.getSelectedFile().getAbsolutePath());
+
+					if (file.exists()) {
+						file.delete();
+					}
+					file.createNewFile();
+
+					FileWriter fw = new FileWriter(file.getAbsoluteFile());
+					BufferedWriter bw = new BufferedWriter(fw);
+
+
+
+
+					for (int rowIndex = 0; rowIndex < table.getRowCount(); rowIndex++) {
+						String className = (String)table.getModel().getValueAt(rowIndex, 0);
+						String attributeName = (String)table.getModel().getValueAt(rowIndex, 1);
+						String typeName = (String)table.getModel().getValueAt(rowIndex, 2);
+						String value = (String)table.getModel().getValueAt(rowIndex, 3);
+
+						for (ClassTag classTag : model.getClassList()) {
+							for (AttributeTag attribute : classTag.getAttributesList()) {
+								if(classTag.getName().equalsIgnoreCase(className) && attribute.getName().equalsIgnoreCase(attributeName) && attribute.getType().getName().equalsIgnoreCase(typeName)){
+									attribute.setValuesInterval(value);
+									bw.write(className+";"+attributeName+";"+typeName+";"+value+"\n");
+									break;
+								}
+							}
+						}
+					}
+				
+
+					GenereteSerializable.saveModel(path, model);
+					bw.close();
+					System.out.println("O intervalo de valores foi salvo com sucesso!");
+					this.setVisible(false);
+				}
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+	}
+	
+	private String checkDataFormat(){
+		String erroMsg = "";
+		for (int rowIndex = 0; rowIndex < table.getRowCount(); rowIndex++) {
+			String value = (String)table.getModel().getValueAt(rowIndex, 3);
+			String type = (String)table.getModel().getValueAt(rowIndex, 2);
+			String atributo = (String)table.getModel().getValueAt(rowIndex, 1);
+			String classe = (String)table.getModel().getValueAt(rowIndex, 0);
+			if(value == null || value.equals("")){
+				erroMsg += "O atributo "+atributo+" da classe "+classe+" não pode ficar sem um intervalo\n";
+			}else{
+				if(type.equalsIgnoreCase("Integer")){
+					if(!value.contains(":")){
+						erroMsg += "O atributo "+atributo+" da classe "+classe+" deve seguir a seguinte regra de formação: valor minimo:valor máximo\n";
+					}else{
+						String[] strlst = value.split(":");
+						if(!(strlst.length == 2)){
+							erroMsg += "O atributo "+atributo+" da classe "+classe+" deve possuir dois valores separados por :\n";
+						}else{
+							Integer minValue = null;
+							Integer maxValue = null;
+							try {
+								minValue = new Integer(strlst[0]);
+							} catch (java.lang.NumberFormatException e) {
+								erroMsg += "O atributo "+atributo+" da classe "+classe+" deve ter o valor minimo do tipo: "+type+"\n";
+							}
+							
+							try {
+								maxValue = new Integer(strlst[1]);
+							} catch (java.lang.NumberFormatException e) {
+								erroMsg += "O atributo "+atributo+" da classe "+classe+" deve ter o valor máximo do tipo: "+type+"\n";
+							}
+							
+							if(minValue != null && maxValue != null  && minValue > maxValue){
+								erroMsg += "O atributo "+atributo+" da classe "+classe+" esta com os valores minimo("+minValue+") e máximo("+maxValue+") invertidos"+"\n";
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		return erroMsg;
+	}
+	
+	private boolean checkAllRowIsComplet(){
+		for (int rowIndex = 0; rowIndex < table.getRowCount(); rowIndex++) {
+			String value = (String)table.getModel().getValueAt(rowIndex, 3);
+			if(value == null || value.equals("")){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+
+             
+}

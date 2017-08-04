@@ -1,0 +1,103 @@
+1415731163296	Rename type 'LoadExportXmiFile'
+1415731179565	Rename type 'ParserHelper'
+1415731244359	Rename type 'UseFileManager'
+1415731270213	Delete element
+1415732038446	Copy compilation unit
+1415732751106	Rename field 'xmiFile'
+1415732965732	Rename type 'UmlFileManager'
+1415733039520	Move compilation unit
+1415733042135	Delete element
+1415733079650	Move compilation unit
+1415733123265	Copy compilation unit
+1415733132375	Rename type 'ParserUmlHelper'
+1415733136045	Copy compilation unit
+1415733146952	Delete element
+1415733182098	Copy compilation unit
+1415733199388	Rename type 'UseConceptModelFileManager'
+1415733291859	Rename field 'useFile'
+1415733301051	Rename field 'bufferedWriterUseFile'
+1415734591043	Copy compilation unit
+1415734604182	Delete element
+1415734607111	Copy compilation unit
+1415734660964	Rename field 'model'
+1415734847053	Rename type 'BaseTag'
+1415735187953	Copy compilation unit
+1415735200688	Rename type 'ICommunAttributeTag'
+1415810312792	Delete element
+1415810330871	Rename type 'ProcessBaseTag'
+1415810341340	Rename type 'CopyOfProcessBaseTag'
+1415812819657	Rename compilation unit 'Arco.java'
+1415813059235	Rename type 'ArcoTag'
+1415815766431	Rename local variable 'abstractBaseElementTagList'
+1415815776465	Rename method 'getAbstractAbstractTaskList'
+1415815785951	Rename local variable 'abstractAbstractTaskList'
+1415879252589	Rename local variable 'abstractTaskList'
+1415879528677	Move compilation units
+1415879548876	Copy compilation unit
+1415879576775	Copy compilation unit
+1415879605432	Copy compilation unit
+1415879636308	Copy compilation unit
+1415879928287	Copy compilation unit
+1415879956120	Copy compilation unit
+1415879965193	Rename type 'CopyOfReceiveTask'
+1415884341501	Rename package 'poli.mestrado.parser.bpmn2use.tag.tasktags'
+1415885592621	Copy compilation unit
+1415885610367	Rename type 'AbstractTaskElement'
+1415886259421	Move compilation unit
+1415886265359	Copy compilation unit
+1415886273849	Rename type 'FactoryTask'
+1415886317468	Delete element
+1415886321314	Delete element
+1415886327324	Copy compilation unit
+1415886337368	Rename type 'TaskFactory'
+1415887675443	Rename local variable 'specificKindofTaskList'
+1415887705297	Rename local variable 'taskElement'
+1415887727544	Rename local variable 'abstractTaskTagList'
+1415887749192	Rename local variable 'TaskTag'
+1415888125418	Copy compilation unit
+1415888137086	Rename type 'CopyOfExclusiveGateway'
+1415888256676	Rename type 'CopyOfGatewayFactory'
+1415888273976	Delete element
+1415888282070	Copy compilation unit
+1415889109265	Copy compilation unit
+1415889116609	Rename type 'CopyOfExclusiveGateway'
+1415901501986	Rename type 'EnumeventGatewayType'
+1415906284689	Delete element
+1415906287484	Copy compilation unit
+1415906304516	Rename type 'AbstractGatewayElement'
+1415906598078	Rename type 'AbstractDataObjectElement'
+1415907402633	Rename type 'DataObjectElement'
+1415907884588	Rename field 'GATEWAYDIRECTION_TAG'
+1415907903137	Rename field 'EVENTGATEWAYTYPE_TAG'
+1415907907040	Rename field 'INSTANTIATE_TAG'
+1415908110272	Rename field 'COMPLETIONQUANTITY_TAG'
+1415908114569	Rename field 'ISFORCOMPENSATION_TAG'
+1415908118283	Rename field 'STARTQUANTITY_TAG'
+1415908153848	Copy compilation unit
+1415908254487	Copy compilation unit
+1415908262500	Rename type 'TaskFactory'
+1415908716771	Rename local variable 'processTag'
+1415908758622	Rename local variable 'specificKindofGatewayList'
+1415908830411	Rename local variable 'abstractGatewayTagList'
+1415908842870	Rename local variable 'gatewayTag'
+1415908923823	Rename field 'IOSPECIFICATION_ATTRIBUTE'
+1415971493031	Rename local variable 'documentationTag'
+1415973403961	Rename method 'getallElements'
+1415973555243	Rename local variable 'TaskTag'
+1415973568873	Rename local variable 'abstractTaskTagList'
+1415974770486	Rename local variable 'elementList'
+1415974778619	Rename local variable 'abstractBaseElement'
+1416009563942	Copy compilation unit
+1416009611046	Copy compilation unit
+1416009647636	Rename compilation unit 'IntermediateThrowEvent.java'
+1416009677337	Copy compilation unit
+1416009711658	Copy compilation unit
+1416009721824	Rename type 'TaskFactory'
+1416009786290	Rename method 'buildTask'
+1416011649057	Rename local variable 'taskElement'
+1416011990897	Rename local variable 'typeTask'
+1416011997925	Rename local variable 'eventType'
+1416012536031	Rename local variable 'abstractTaskTagList'
+1416012651247	Rename local variable 'TaskTag'
+1416080224655	Rename package 'poli.mestrado.parser.bpmn2use.tag.sequenceFlow'
+1416080258957	Move compilation unit

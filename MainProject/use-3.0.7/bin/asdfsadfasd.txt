@@ -1,0 +1,84 @@
+use version 3.0.7, Copyright (C) 1999-2011 University of Bremen
+use> help
+============================General commands============================
+help [!CMD]                 Print available commands
+==========================Evaluation commands===========================
+? EXPR                      Compiles and evaluates EXPR
+?? EXPR                     Compiles and evaluates EXPR (verbose)
+: EXPR                      Compiles EXPR and shows its static type
+\                           Enter OCL-Expressions over multiple lines
+======================State manipulation commands=======================
+! CMD                       Executes state manipulation command
+!create <id-list> : <class> [between (<id-list>)]  Creates objects
+!destroy <id-list>          Destroys objects
+!insert (<id-list>) into <assoc>  Insert link into association
+!delete (<id-list>) from <assoc>  Delete link from association
+!set <obj-id>.<attr-id> := <expr>  Set attribute value of object
+!openter <obj-expr> <name> ([<expr-list>])  Enters object operation
+!opexit [<result-expr>]     Exits least recently entered operation
+check [-v] [-d] [ -a | inv-list ]  Checks integrity constraints
+step on                     Activates single-step mode
+===============================File input===============================
+open [-q] FILE              Reads information from FILE
+read FILE                   Deprecated. Reads commands from FILE
+readq FILE                  Deprecated. Reads commands quietly from FILE
+reset                       Reset system to empty state
+q, quit, exit               Exit USE
+undo                        Undo last state manipulation command
+==========================Information commands==========================
+info SUBCOMMAND             Print info
+info class NAME             Print info about class
+info model                  Print info about loaded model
+info state                  Print info about current system state
+info opstack                Print currently active operations
+info prog                   Print internal program infos
+info vars                   Prints information about global variables
+===========================Generator commands===========================
+gen load FILE               Loads class invariants
+gen unload [invnames]       Unloads added class invariants
+gen loaded                  Prints loaded class invariants
+gen flags [invnames] [+d|-d] [+n|-n]  Switch invariant evaluation flags
+gen start [options] FILE PROCNAME([params])  Search valid system state
+gen result                  Prints results of last generator search
+gen result inv              Prints statistics of last generator search
+gen result accept           Accept result of last generator search
+============================Plugin commands=============================
+plugins                     Prints currently available plugin commands
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\step1.cmd"
+Error: File `C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\step1.cmd' not found.
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step1.cmd"
+Error: File `C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step1.cmd' not found.
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step1.CMD__"
+Step1.CMD__> -- Opens the class diagram:
+Step1.CMD__> -- open <PATH>\<FILE_NAME>.use
+Step1.CMD__> 
+Step1.CMD__> open "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\Model\model.use"
+Step1.CMD__> 
+Step1.CMD__> !create cs:Department
+Step1.CMD__> 
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step2.cmd"
+Error: File `C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step2.cmd' not found.
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step2.cmd"
+Error: File `C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step2.cmd' not found.
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step2.CMD__"
+Step2.CMD__> -- assigns the attribute values in the new objecta
+Step2.CMD__> 
+Step2.CMD__> -- Department
+Step2.CMD__> !set cs.name := 'Computer Science'
+Step2.CMD__> !set cs.location := 'Bremen'
+Step2.CMD__> !set cs.budget := 10000
+Step2.CMD__> 
+use> read "C:\Users\rafin_000\Google Drive\MESTRADO-POLI\DISSERTACAO\USE\Samples\Employees, Departments and Projects\StepCommands\Step3.CMD__"
+Step3.CMD__> -- creates two objects of type Employee and assigns attribute values
+Step3.CMD__> 
+Step3.CMD__> -- Employee john
+Step3.CMD__> !create john : Employee
+Step3.CMD__> !set john.name := 'john'
+Step3.CMD__> !set john.salary := 4000
+Step3.CMD__> 
+Step3.CMD__> -- Employee frank
+Step3.CMD__> !create frank : Employee
+Step3.CMD__> !set frank.name := 'frank'
+Step3.CMD__> !set frank.salary := 4500
+Step3.CMD__> 
+use> 

@@ -1,0 +1,158 @@
+package managers;
+
+import gui.MainScreen;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.List;
+
+import poli.mestrado.parser.bpmn2use.ParserBPMNHelper;
+import poli.mestrado.parser.bpmn2use.graph.Edge;
+import poli.mestrado.parser.bpmn2use.graph.Graph;
+import poli.mestrado.parser.bpmn2use.graph.GraphHelper;
+import poli.mestrado.parser.bpmn2use.graph.Vertice;
+import poli.mestrado.parser.bpmn2use.tag.ProcessTag;
+import poli.mestrado.parser.bpmn2use.tag.event.EndEvent;
+import poli.mestrado.parser.bpmn2use.tag.event.StartEvent;
+import poli.mestrado.parser.bpmn2use.tag.gateway.AbstractGatewayElement;
+import poli.mestrado.parser.bpmn2use.tag.gateway.ExclusiveGateway;
+import poli.mestrado.parser.bpmn2use.tag.task.AbstractTaskElement;
+import poli.mestrado.parser.util.Constants;
+/* $Id$
+ *******************************************************************************
+ * Copyright (c) 2014 Contributors - see below
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *    Rafael
+ *******************************************************************************
+ */
+import poli.mestrado.parser.util.Constants;
+
+
+
+
+public class ExecutionManager {
+
+    private static ExecutionManager instance = null;
+    private String command;
+    private int token;
+    private List<List<Vertice>> pahts;
+    private Graph graph;
+    private ProcessTag process;
+    private List<Vertice> currentPath;
+    public boolean canExecute = true;
+  
+    
+    private Vertice currentVertice = null;
+
+    @SuppressWarnings("unchecked")
+	public ExecutionManager(){
+    	process = ParserBPMNHelper.getInstance().parserBpmn2Assl();
+		graph = GraphHelper.getInstance().generateGraph(process);
+		pahts = GraphHelper.getInstance().generatePaths();
+    }
+    
+   
+
+    public void startExecution(String pathName){
+    	canExecute = true;
+    	if(pathName.equalsIgnoreCase(Constants.ALL_PATHS_NAMES)){
+    		
+    	}else{
+    		Integer pathIndex = new Integer(pathName.substring(pathName.lastIndexOf("-")+1, pathName.length()));
+    		System.out.println("-------------Executando "+pathName+"--------------");
+    		currentPath = pahts.get(pathIndex-1);
+    		printSelectPath();
+    		System.out.println("-----------------------------------------------");
+    		
+    	}
+    }
+
+    public String[] getPathName(){
+    	String[] names = new String[pahts.size()+1];
+    	names[0] = Constants.ALL_PATHS_NAMES;
+    	for (int i = 1; i < pahts.size()+1; i++) {
+    		names[i] = "Caminho-"+i;
+    	}
+    	return names;
+    }
+    
+    private void printSelectPath(){
+    	
+    	for(int i = 0; i<currentPath.size(); i++){
+			Vertice vertice = currentPath.get(i);
+			if(vertice.getVeriticeElement() instanceof StartEvent){
+				System.out.println("Start Event");
+			}else if(vertice.getVeriticeElement() instanceof AbstractTaskElement){
+				AbstractTaskElement currentTask = ((AbstractTaskElement) vertice.getVeriticeElement());
+				System.out.println("TASK: "+currentTask.getName());
+			}else if(vertice.getVeriticeElement() instanceof ExclusiveGateway && ((AbstractGatewayElement) vertice.getVeriticeElement()).getKindGateway() == Constants.GATEWAY_FORK){
+				List<Edge> arestas = GraphHelper.getInstance().getAllEdgeLinkedToVertice(vertice, Constants.SOURCE_VERTICE);
+				for (Edge edge : arestas) {
+					if(edge.getTargetVertice().equals(currentPath.get(i+1))){
+						System.out.println("Gateway execlusivo: "+vertice.getVeriticeElement().getName()+" condição:"+edge.getUseShellComand());
+					}
+				}
+			}else if(vertice.getVeriticeElement() instanceof ExclusiveGateway && ((AbstractGatewayElement) vertice.getVeriticeElement()).getKindGateway() == Constants.GATEWAY_JOIN){
+				
+			}else if(vertice.getVeriticeElement() instanceof EndEvent){
+				System.out.println("End Event");
+			}
+		}
+    }
+    
+    
+    public void executeNextStep(){
+    	if(!canExecute){
+    		System.out.println("Execution Stoped");
+    		return;
+    	}
+    	currentVertice = currentPath.get(token);
+    	System.out.println("_____________________________________________");
+    	if(currentVertice.getVeriticeElement() instanceof StartEvent){
+			System.out.println("Start Evente");
+		}else if(currentVertice.getVeriticeElement() instanceof AbstractTaskElement){
+			AbstractTaskElement currentTask = ((AbstractTaskElement) currentVertice.getVeriticeElement());
+			System.out.println("Executing Task: "+currentTask.getName());
+			for(String cmd: currentTask.getShellUseCmd()){
+				System.out.println("   Executando o comando cmd: "+cmd);
+				UseProcessManager.getInstance().sendCommand(cmd);
+				synchronized(this){
+					try {
+						this.wait(1500);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+			
+		}else if(currentVertice.getVeriticeElement() instanceof ExclusiveGateway && ((AbstractGatewayElement) currentVertice.getVeriticeElement()).getKindGateway() == Constants.GATEWAY_FORK){
+			List<Edge> arestas = GraphHelper.getInstance().getAllEdgeLinkedToVertice(currentVertice, Constants.SOURCE_VERTICE);
+			for (Edge aresta : arestas) {
+				if(aresta.getTargetVertice().equals(currentPath.get(token+1))){
+					System.out.println("Testando a condição: "+aresta.getUseShellComand());
+					UseProcessManager.getInstance().sendCommand(aresta.getUseShellComand());
+				}
+			}
+		}else if(currentVertice.getVeriticeElement() instanceof EndEvent){
+			token = 0;
+			System.out.println("End Evente");
+		}else{
+			System.out.println("Executando: "+currentVertice.getVeriticeElement().getName());
+		}
+    	token++;
+    }
+    
+    
+    public void stopExecution(){
+    	canExecute = false;
+    }
+    
+    
+
+}

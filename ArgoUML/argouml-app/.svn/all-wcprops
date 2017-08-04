@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/argouml/!svn/ver/19923/trunk/src/argouml-app
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/argouml/!svn/ver/18914/trunk/src/argouml-app/default.properties
+END
+org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/argouml/!svn/ver/18897/trunk/src/argouml-app/org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/build.properties
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/argouml/!svn/ver/19884/trunk/src/argouml-app/.gitignore
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/argouml/!svn/ver/19923/trunk/src/argouml-app/pom.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/build.xml
+END
+.checkstyle
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/argouml/!svn/ver/18447/trunk/src/argouml-app/.checkstyle
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/argouml/!svn/ver/18891/trunk/src/argouml-app/.project
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/argouml/!svn/ver/17806/trunk/src/argouml-app/plugin.xml
+END
+plugin.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/argouml/!svn/ver/17806/trunk/src/argouml-app/plugin.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/argouml/!svn/ver/19917/trunk/src/argouml-app/.classpath
+END

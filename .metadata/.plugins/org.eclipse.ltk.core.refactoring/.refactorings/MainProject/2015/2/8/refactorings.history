@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;gui.ThreadB&apos; to &apos;ThreadConceptTool&apos;&#x0D;&#x0A;- Original project: &apos;MainProject&apos;&#x0D;&#x0A;- Original element: &apos;gui.ThreadB&apos;&#x0D;&#x0A;- Renamed element: &apos;gui.ThreadConceptTool&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThreadB&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;gui{MainScreen.java[ThreadB" matchStrategy="1" name="ThreadConceptTool" qualified="false" references="true" similarDeclarations="false" stamp="1424533713551" textual="false" version="1.0"/>
+</session>

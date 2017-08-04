@@ -1,0 +1,21 @@
+Features:
+1-Botão do USE na UI/Menu
+2-Versão da release do dia 26/09 do parser ARGO2USE
+3-Abri o use
+4-Criar classes, classe associatvas, enums
+5-Associaçõa: Simples, composição, agregação, hierarquias
+6-Atributos e parametros e retorno de metodos com tipos: primitivos, classes e enums
+
+Bug:
+1-problema de sicronização entre a thread de exportar em XMI e o parser para o USE
+2-Abre o use a cada click no botão. Varios USES
+3-ArgoUML não tem o tipo primitivo real ou float
+4-O argo permite colocar o tipo none em atributos/retorno e etc isso gera um nullPointer
+5-Não pode ter caracteres especiais no arquivo use
+6-mensagens de erro do use são ignorada ao inserir um novo modelo gerando um modelo desatualizado. [Feature] criar uma area visual para o log do use
+
+
+proximas features:
+1-Novo parser
+
+
